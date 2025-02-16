@@ -1,6 +1,6 @@
 .main-ui {
     &__container {
-        max-width: 704px;
+        width: 734px;
         padding: 0 15px;
         margin: 0 auto;
     }
@@ -29,5 +29,9 @@
     }
     &__buttons h1 {
         margin-bottom: 32px;
+    }
+    &__buttons-wrapper {
+        display: flex;
+        gap: 24px;
     }
 }

@@ -1,11 +1,42 @@
+a.btn,
 .btn {
-    
+    display: block;
+    background-color: #403432;
+    width: 118px;
+    height: 48px;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-color-btn);
+    transition:
+        background-color,
+        transform 0.2s ease-in;
+    transform: translateY(0);
 }
-.btn--normal {
-}
-.btn--hover {
-}
+
+a.btn--disable,
 .btn--disable {
+    background-color: #c1b4b1;
 }
+
+a.btn--cart,
 .btn--cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    background-color: #5b3a32;
+}
+
+a.btn:hover,
+.btn:hover,
+.btn--hover {
+    background-color: #776763;
+}
+a.btn:active,
+.btn:active {
+    transform: translateY(2px);
 }
