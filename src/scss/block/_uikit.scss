@@ -1,11 +1,33 @@
 .main-ui {
     &__container {
-        max-width: 574px;
+        max-width: 704px;
         padding: 0 15px;
         margin: 0 auto;
     }
 }
 
-.uiKit {
+.uikit {
     padding: 56px 80px;
+
+    &__list {
+        margin-bottom: 60px;
+    }
+
+    &__list li + li {
+        margin-top: 24px;
+    }
+
+    &__main-title {
+        font-weight: 700;
+        font-size: 36px;
+
+        margin-bottom: 44px;
+    }
+
+    &__buttons {
+        margin-bottom: 60px;
+    }
+    &__buttons h1 {
+        margin-bottom: 32px;
+    }
 }
