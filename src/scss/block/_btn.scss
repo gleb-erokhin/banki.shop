@@ -17,8 +17,13 @@ a.btn,
 }
 
 a.btn--disable,
-.btn--disable {
+.btn--disable:disabled {
     background-color: #c1b4b1;
+}
+
+button[disabled] {
+    cursor: default;
+    pointer-events: none;
 }
 
 a.btn--cart,
