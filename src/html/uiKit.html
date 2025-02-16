@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
 
-    <title>Ui Kit</title>
-</head>
-<body>
-    <main class="uiKit">
-        <div>Шрифт: Merriweather</div>
-        
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        @@include('blocks/style.html')
+        <title>Ui Kit</title>
+    </head>
+
+    <body>
+        <main class="main-ui">
+            <div class="main-ui__container">
+
+                <div class="uiKit">
+
+                    <div>Шрифт: Merriweather</div>
+
+                    <ul class="uikit__list">
+                        <li class="uikit__item">H1 - 24px bold, int. 36</li>
+                        <li class="uikit__item">H2 - 18px regular, int. 27</li>
+                        <li class="uikit__item">H3 - 16px bold, int. 24</li>
+                        <li class="uikit__item">H4 - 14px bold, int. 21</li>
+                        <li class="uikit__item">H5 - 14px regular, int. 21</li>
+                        <li class="uikit__item">H6 - 14px light, int. 21</li>
+                    </ul>
+
+                    <div class="uikit__buttons">
+                        <button class="btn btn-normal" type="button">
+                            Нормал
+                        </button>
+                        <button class="btn btn--hover" type="button">
+                            Ховер
+                        </button>
+                        <button class="btn btn--disable" type="button">
+                            Disable
+                        </button>
+                        <button class="btn btn--cart" type="button">
+                            В корзине
+                        </button>
+                    </div>
+
+                    <div class="uikit__search">
+                        <div class="uikit__search-item">
+                            <label for="normal">Нормал</label>
+                            <input type="text" name="normal" placeholder="Поиск по названию картины">
+                            <button type="submit">Найти</button>
+                        </div>
+                        <div class="uikit__search-item">
+                            <label for="normal">Актив</label>
+                            <input type="text" name="normal">
+                            <button type="submit">Найти</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </body>
+
 </html>
