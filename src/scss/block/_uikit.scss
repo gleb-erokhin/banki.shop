@@ -10,25 +10,36 @@
     padding: 56px 80px;
 
     &__list {
-        margin-bottom: 68px;
+        margin-bottom: 62px;
+    }
+
+    &__list li:nth-child(5) {
+        margin-top: 28px;
+    }
+
+    &__list li:last-child {
+        margin-top: 27px;
     }
 
     &__list li + li {
         margin-top: 24px;
     }
 
-    &__main-title {
+    &__main-header h1 {
         font-weight: 700;
         font-size: 36px;
 
         margin-bottom: 44px;
     }
+    &__header {
+        margin-bottom: 30px;
+    }
 
     &__buttons {
         margin-bottom: 60px;
     }
-    &__title {
-        margin-bottom: 31px;
+    &__bittons &__header {
+        margin-bottom: 30px;
     }
     &__buttons-wrapper {
         display: flex;
@@ -61,11 +72,11 @@
 }
 
 input[type="text"] {
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 17px;
     border: 1px solid grey;
     float: left;
-    width: 80%;
+    width: 70%;
     background: #f1f1f1;
 }
 
