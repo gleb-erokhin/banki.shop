@@ -6,7 +6,7 @@
         flex-grow: 1;
     }
 
-      &__search-btn {
+    &__search-btn {
         width: 122px;
         height: 48px;
         background-color: #403432;
@@ -19,7 +19,7 @@
 
         transition: all 0.2s ease-in;
     }
-    
+
     input[type="text"] {
         padding: 10px 15px;
         font-size: 17px;
