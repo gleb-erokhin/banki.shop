@@ -48,42 +48,14 @@
     &__search-subtitle {
         margin-bottom: 12px;
     }
-    &__search-btn {
-        width: 122px;
-        height: 48px;
-        background-color: #403432;
-
-        font-family: var(--font-family);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #fff;
-    }
+  
 
     &__search-item {
-        max-width: 416px;
-        display: flex;
-
         margin-bottom: 32px;
     }
-    &__input {
-        flex-grow: 1;
-    }
+
 }
 
-input[type="text"] {
-    padding: 10px 15px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 70%;
-    background: #f1f1f1;
-}
 
-input[placeholder] {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #9f9f9f;
-}
+
+
