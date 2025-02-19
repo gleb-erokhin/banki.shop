@@ -1,11 +1,21 @@
 <header class="header">
     <div class="container">
+
         <div class="header__row">
-            <div class="logo">Logo</div>
-            <button class="mobile-nav-btn">
+
+            @@include('nav.html')
+
+            <form class="form-search" action="#">
+                <input class="form-search__input" type="text" name="normal" placeholder="Поиск по названию картины">
+                <button class="form-search__search-btn" type="submit">Найти</button>
+            </form>
+
+            <!-- <button class="mobile-nav-btn">
                 <div class="nav-icon"></div>
-            </button>
+            </button> -->
+
         </div>
+
     </div>
 </header>
 @@include('mobile-nav.html')
