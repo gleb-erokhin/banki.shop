@@ -1,21 +1,32 @@
 .footer {
-	background-color: rgb(39, 39, 39);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
-
-	h1 {
-		font-size: 32px;
+	background-color: #eceaea;
+	padding: 38px 0;
+	
+	& .nav__link {
+		color: #555;
 	}
 
-	a {
-		// color: var(--link-color);
-		color: #fff;
-		text-decoration: underline;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 30px;
 	}
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
+	&__address {
+		display: flex;
+		column-gap: 51px;
+		row-gap: 10px;
+
+		margin-left: auto;
+	}
+
+	&__phone {
+		gap: 9px;;
+	}
+
+	&__adres {
+		gap: 10px;;
 	}
 }
 
