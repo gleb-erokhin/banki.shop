@@ -4,6 +4,12 @@
 	color: var(--text-color);
 }
 
+.title--sale {
+	font-weight: 300;
+	text-decoration: line-through;
+	color: #a0a0a0;
+}
+
 .title--fz24-bold {
 	font-size: 24px;
 	font-weight: 700;
