@@ -2,6 +2,9 @@ const cardsData = `[
     {
         "id": 1,
         "header": "«Рождение Венеры» Сандро Боттичелли",
+        "slide1": "./img/cards/venera01.jpg",
+        "slide2": "./img/cards/venera02.jpg",
+        "about": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quasi excepturi dignissimos harum deserunt? Voluptates eveniet sint perspiciatis fugiat ipsum.</p>",
         "oldPrice": "2 000 000 $",
         "price": "1 000 000 $",
         "img": "./img/cards/venera.jpg",
@@ -33,7 +36,7 @@ const cardsData = `[
         "id": 4,
         "header": "«Урок анатомии»  Рембрандт",
         "oldPrice": "",
-        "price": "",
+        "price": "4 000 000 $",
         "img": "./img/cards/anatomy.jpg",
         "bigImg": "./img/cards/anatomy@2x.jpg",
         "prefix": " 2x",

@@ -1,11 +1,13 @@
 // Инициализация Fancybox для открытия модального окна
 Fancybox.bind("[data-fancybox]", {});
 
-// modalWindow = document.getElementById("modalWindow"),
+d = document.querySelector(".cards")
+
+modalWindow = document.getElementById("modalWindow"),
 // modalImg = modalWindow.querySelector("[data-target='img']"),
-// modalHeader = modalWindow.querySelector("[data-target='header']"),
+modalHeader = modalWindow.querySelector("[data-target='header']"),
 // // modalText = modalWindow.querySelector("[data-target='info']"),
-// modalDesc = modalWindow.querySelector("[data-target='about']"),
+modalDesc = modalWindow.querySelector("[data-target='about']"),
 // modalGitSource = modalWindow.querySelector("[data-git='gitSource']"),
 // modalGitDemo = modalWindow.querySelector("[data-git='gitDemo']"),
 // modalPages = modalWindow.querySelector(".modal--list"),
