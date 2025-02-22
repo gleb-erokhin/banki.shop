@@ -2,6 +2,10 @@
     width: 416px;
     display: flex;
 
+    @include tablet {
+        margin-left: auto;
+    }
+
     &__input {
         flex-grow: 1;
     }

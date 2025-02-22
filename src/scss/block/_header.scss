@@ -9,10 +9,12 @@
 		align-items: center;
 		gap: 30px;
 	}
-}
 
-.header__nav {
-	@include tablet {
+	&__row .mobile-nav-btn {
 		display: none;
+
+		@include tablet {
+			display: block;
+		}
 	}
 }
