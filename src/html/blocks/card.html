@@ -1,26 +1,28 @@
-<div class="card">
-    <div class="card__column">
+<div class="card" data-id="1">
+    <div class="card__column" data-fancybox data-src="#modalWindow">
 
         <a class="card__link" href="#">
             <img src="./../../img/cards/venera.jpg" width="280" height="160" alt="«Рождение Венеры» Сандро Боттичелли"
-                srcset="./../../img/cards/venera@2x.jpg 2x">
+                srcset="./../../img/cards/venera@2x.jpg 2x" data-img="img">
         </a>
 
         <div class="card__desc">
             <div class="card__header">
-                <h2 class="title title--fz18-reg">«Рождение Венеры» Сандро Боттичелли</h2>
+                <h2 class="title title--fz18-reg" data-header="header">«Рождение Венеры» Сандро Боттичелли</h2>
             </div>
             <div class="card__cart df">
                 
                 <div class="card__buy df">
-                    <span class="title title--sale">2 000 000 $</span>
-                    <span class="title title--fz16-bold">1 000 000 $</span>
+                    <span class="title title--price" data-price="price">2 000 000 $</span>
+                    <span class="title title--fz16-bold" data-sale="sale">1 000 000 $</span>
                 </div>
-
+                
                 <button class="btn" type="button">
                     Купить
                 </button>
             </div>
+
+            <p class="title title--fz16-bold none">Продана на аукционе</p>
         </div>
     </div>
 </div>

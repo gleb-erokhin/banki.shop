@@ -22,7 +22,7 @@ const js = () => {
         }))
         .pipe(sourceMaps.init())
         .pipe(babel())
-        .pipe(webpack(app.webpack))
+        // .pipe(webpack(app.webpack))
         .pipe(sourceMaps.write())
         .pipe(gulp.dest(path.js.dest));
 }

@@ -12,9 +12,14 @@ export default {
         dest: pathDest
     },
     js: {
-        src: pathSrc + "/js/*.js",
+        src: pathSrc + "/js/**/*.js",
         watch: pathSrc + "/js/**/*.js",
         dest: pathDest + "/js"
+    },
+    libs: {
+        src: pathSrc + "/libs/**/*.js",
+        watch: pathSrc + "/libs/**/*.js",
+        dest: pathDest + "/libs"
     },
     img: {
         src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
