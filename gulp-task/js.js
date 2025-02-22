@@ -20,10 +20,8 @@ const js = () => {
                 message: error.message
             }))
         }))
-        .pipe(sourceMaps.init())
         .pipe(babel())
-        // .pipe(webpack(app.webpack))
-        .pipe(sourceMaps.write())
+        .pipe(webpack(app.webpack))
         .pipe(gulp.dest(path.js.dest));
 }
 
