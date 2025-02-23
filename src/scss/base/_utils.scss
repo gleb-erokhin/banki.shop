@@ -9,3 +9,18 @@
 .mb-20 {
     margin-bottom: 20px;
 }
+
+// класс обозначающий что товар продан, отключает карточку. удаляет кнопку, показывает сообщение что товар продан
+.sale {
+    opacity: 0.5;
+    .card__cart {
+        display: none;
+    }
+    .card__sale {
+        display: block;
+    }
+    .card__link {
+        pointer-events: none;
+        cursor: default;
+    }
+}

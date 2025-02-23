@@ -29,9 +29,14 @@ a.forEach(item => {
                         </button>
                     </div>
 
-                    <p class="title title--fz16-bold none">Продана на аукционе</p>
+                    <p class="card__sale title title--fz16-bold">Продана на аукционе</p>
                 </div>
             </div>
         </div>`
     );
 });
+
+
+const data = document.querySelector('[data-id="4"]');
+data.classList.add('sale')
+

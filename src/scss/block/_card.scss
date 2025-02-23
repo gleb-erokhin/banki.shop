@@ -24,6 +24,9 @@
     &__cart {
         justify-content: space-between;
     }
+    &__sale {
+        display: none;
+    }
     &__buy {
         flex-direction: column;
         justify-content: center;
@@ -33,3 +36,5 @@
 .card__link:hover {
     opacity: 0.5;
 }
+
+
