@@ -21,7 +21,7 @@ const js = () => {
             }))
         }))
         .pipe(babel())
-        .pipe(webpack(app.webpack))
+        // .pipe(webpack(app.webpack))
         .pipe(gulp.dest(path.js.dest));
 }
 

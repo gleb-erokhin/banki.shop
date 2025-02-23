@@ -1,6 +1,9 @@
 const
     a = JSON.parse(cardsData),
-    d = document.querySelector(".cards")
+    d = document.querySelector(".cards"),
+    modalWindow = document.getElementById("modalWindow"),
+    modalImg = modalWindow.querySelector("[data-target='img']");
+
 
 // Заполнение карточек на странице
 a.forEach(item => {
@@ -36,7 +39,28 @@ a.forEach(item => {
     );
 });
 
+// Обработчик клика по карточке для открытия модального окна с нужными данными
+d.addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
+    if (card) {
+        const cardId = card.getAttribute("data-id");
+        console.log(cardId);
+        const cardData = a.find(item => item.id == cardId);
+
+        // Заполнение модального окна
+        modalImg.src = cardData.img;
+        // modalImg.srcset = cardData.bigImg + cardData.prefix;
+        // modalHeader.textContent = cardData.header;
+        // modalText.textContent = cardData.info;
+        // modalDesc.innerHTML = cardData.about;
+        // modalSkils.innerHTML = cardData.skils;
+        // modalGitSource.setAttribute('href', cardData.gitSource);
+        // modalGitDemo.setAttribute('href', cardData.gitDemo);
+    }
+});
 
 const data = document.querySelector('[data-id="4"]');
 data.classList.add('sale')
 
+// Инициализация Fancybox для открытия модального окна
+Fancybox.bind("[data-fancybox]", {});
