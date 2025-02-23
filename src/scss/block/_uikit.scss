@@ -1,13 +1,14 @@
-.main-ui {
-    &__container {
-        max-width: 734px;
-        padding: 0 15px;
-        margin: 0 auto;
-    }
-}
+// .main-ui {
+//     &__container {
+//         max-width: 734px;
+//         padding: 0 15px;
+//         margin: 0 auto;
+//     }
+// }
 
 .uikit {
-    padding: 56px 80px;
+    max-width: 734px;
+    padding: 56px 0 69px 0;
 
     &__list {
         margin-bottom: 62px;
@@ -25,13 +26,14 @@
         margin-top: 24px;
     }
 
-    &__main-header h1 {
+    &__main-title {
         font-weight: 700;
         font-size: 36px;
 
+        margin-top: 44px;
         margin-bottom: 44px;
     }
-    &__header {
+    &__title {
         margin-bottom: 30px;
     }
 
@@ -43,19 +45,24 @@
     }
     &__buttons-wrapper {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 24px;
     }
     &__search-subtitle {
         margin-bottom: 12px;
     }
-  
-
     &__search-item {
         margin-bottom: 32px;
     }
+    &__form {
+        max-width: 416px;
+    }
 
+    & .form-search {
+        @include tablet {
+            width: unset;
+            margin-left: unset;
+        }
+    }
 }
-
-
-
-
