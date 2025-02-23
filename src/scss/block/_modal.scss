@@ -1,4 +1,13 @@
 .modal {
-    width: 500px;
+    width: 700px;
     background-color: #ccc;
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    &__img-wrapper {
+        align-self: center;
+    }
 }

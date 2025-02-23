@@ -2,7 +2,11 @@ const
     a = JSON.parse(cardsData),
     d = document.querySelector(".cards"),
     modalWindow = document.getElementById("modalWindow"),
-    modalImg = modalWindow.querySelector("[data-target='img']");
+    modalImg = modalWindow.querySelector("[data-target='img']"),
+    modalHeader = modalWindow.querySelector("[data-target='header']"),
+    modalDesc = modalWindow.querySelector("[data-target='about']"),
+    modalOldPrice = modalWindow.querySelector("[data-oldPrice='oldPrice']"),
+    modalPrice = modalWindow.querySelector("[data-price='price']");
 
 
 // Заполнение карточек на странице
@@ -49,18 +53,21 @@ d.addEventListener("click", (e) => {
 
         // Заполнение модального окна
         modalImg.src = cardData.img;
-        // modalImg.srcset = cardData.bigImg + cardData.prefix;
-        // modalHeader.textContent = cardData.header;
+        modalHeader.textContent = cardData.header;
+        modalImg.srcset = cardData.bigImg + cardData.prefix;
+        modalDesc.innerHTML = cardData.about;
+        modalOldPrice.innerHTML = cardData.oldPrice;
+        modalPrice.innerHTML = cardData.price;
         // modalText.textContent = cardData.info;
-        // modalDesc.innerHTML = cardData.about;
         // modalSkils.innerHTML = cardData.skils;
         // modalGitSource.setAttribute('href', cardData.gitSource);
         // modalGitDemo.setAttribute('href', cardData.gitDemo);
     }
 });
 
+// Для создания проданного товара, поиск по дата атрибуту напрямую.
 const data = document.querySelector('[data-id="4"]');
-data.classList.add('sale')
+data.classList.add('sale');
 
 // Инициализация Fancybox для открытия модального окна
 Fancybox.bind("[data-fancybox]", {});
