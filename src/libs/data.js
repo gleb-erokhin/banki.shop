@@ -2,7 +2,7 @@ const cardsData = `[
     {
         "id": 1,
         "header": "«Рождение Венеры» Сандро Боттичелли",
-        "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, officia possimus? Reiciendis nobis consequuntur dolores?",
+        "about": "«Венера» Боттичелли — первое изображение полностью нагого женского тела, где нагота не символизирует первородный грех (как, например, при изображении Евы).",
         "slide1": "./img/cards/venera/venera1.jpg",
         "slide2": "./img/cards/venera/venera2.jpg",
         "oldPrice": "2 000 000 $",
@@ -15,7 +15,9 @@ const cardsData = `[
     {
         "id": 2,
         "header": "«Тайная вечеря»  Леонардо да Винчи",
-        "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, officia possimus? Reiciendis nobis consequuntur dolores?",
+        "about": "Та́йная ве́черя (Мф.26:17-29; Мк.14:12-25; Лк.22:7-30; Ин.13-17) – пасхальная трапеза (ужин) Спасителя с учениками-апостолами накануне Его крестных страданий, в Великий Четверг, во время которой Он установил Таинство Причащения (Евхаристии), как благодатного средства единения верующих с Богом и друг с другом, которое совершается ныне за богослужением, именуемым Литургией.",
+        "slide1": "./img/cards/tajnaja-vecherja/tajnaja-vecherja1.jpg",
+        "slide2": "./img/cards/tajnaja-vecherja/tajnaja-vecherja2.jpg",
         "oldPrice": "",
         "price": "3 000 000 $",
         "img": "./img/cards/night.jpg",
@@ -26,7 +28,9 @@ const cardsData = `[
     {
         "id": 3,
         "header": "«Сотворение Адама» Микеланджело",
-        "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, officia possimus? Reiciendis nobis consequuntur dolores?",
+        "about": "«Сотворение Адама» — одна из самых выдающихся композиций росписи Сикстинской капеллы. В бесконечном пространстве летит Бог-Отец, окружённый бескрылыми ангелами, с реющей белой туникой. Правая рука вытянута навстречу руке Адама и почти касается её (см. «Рука Творца»).",
+        "slide1": "./img/cards/adam/adam1.jpg",
+        "slide2": "./img/cards/adam/adam2.jpg",
         "oldPrice": "6 000 000 $",
         "price": "5 000 000 $",
         "img": "./img/cards/adam.jpg",
@@ -37,7 +41,9 @@ const cardsData = `[
     {
         "id": 4,
         "header": "«Урок анатомии»  Рембрандт",
-        "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, officia possimus? Reiciendis nobis consequuntur dolores?",
+        "about": "Это был первый крупный заказ, полученный Рембрандтом после переезда в Амстердам. На полотне (1632) запечатлено вскрытие, проведенное доктором Николасом Тульпом. Выделяющийся простым воротником, широкополой шляпой и ясным, открытым взглядом, Тульп держит щипцами сухожилия руки; другой рукой он показывает, как сухожилия сгибают пальцы — основные инструменты художника и хирурга.",
+        "slide1": "./img/cards/anatomy/anatomy1.jpg",
+        "slide2": "./img/cards/anatomy/anatomy2.jpg",
         "oldPrice": "1",
         "price": "2",
         "img": "./img/cards/anatomy.jpg",
