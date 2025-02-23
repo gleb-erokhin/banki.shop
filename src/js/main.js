@@ -2,11 +2,13 @@ const
     a = JSON.parse(cardsData),
     d = document.querySelector(".cards"),
     modalWindow = document.getElementById("modalWindow"),
-    modalImg = modalWindow.querySelector("[data-target='img']"),
+    // modalImg = modalWindow.querySelector("[data-target='img']"),
     modalHeader = modalWindow.querySelector("[data-target='header']"),
     modalDesc = modalWindow.querySelector("[data-target='about']"),
     modalOldPrice = modalWindow.querySelector("[data-oldPrice='oldPrice']"),
-    modalPrice = modalWindow.querySelector("[data-price='price']");
+    modalPrice = modalWindow.querySelector("[data-price='price']"),
+    modalSlide1 = modalWindow.querySelector("[data-target='slide1']"),
+    modalSlide2 = modalWindow.querySelector("[data-target='slide2']");
 
 
 // Заполнение карточек на странице
@@ -52,9 +54,11 @@ d.addEventListener("click", (e) => {
         const cardData = a.find(item => item.id == cardId);
 
         // Заполнение модального окна
-        modalImg.src = cardData.img;
+        // modalImg.src = cardData.img;
+        modalSlide1.src = cardData.slide1;
+        modalSlide2.src = cardData.slide2;
         modalHeader.textContent = cardData.header;
-        modalImg.srcset = cardData.bigImg + cardData.prefix;
+        // modalImg.srcset = cardData.bigImg + cardData.prefix;
         modalDesc.innerHTML = cardData.about;
         modalOldPrice.innerHTML = cardData.oldPrice;
         modalPrice.innerHTML = cardData.price;
@@ -67,3 +71,10 @@ data.classList.add('sale');
 
 // Инициализация Fancybox для открытия модального окна
 Fancybox.bind("[data-fancybox]", {});
+
+var swiper = new Swiper(".modal__mySwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
