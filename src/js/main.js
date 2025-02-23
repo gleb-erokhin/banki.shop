@@ -58,10 +58,6 @@ d.addEventListener("click", (e) => {
         modalDesc.innerHTML = cardData.about;
         modalOldPrice.innerHTML = cardData.oldPrice;
         modalPrice.innerHTML = cardData.price;
-        // modalText.textContent = cardData.info;
-        // modalSkils.innerHTML = cardData.skils;
-        // modalGitSource.setAttribute('href', cardData.gitSource);
-        // modalGitDemo.setAttribute('href', cardData.gitDemo);
     }
 });
 

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/fancybox.css">
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css">
         <title>Каталог</title>
         @@include('blocks/style.html')
     </head>
@@ -28,12 +29,18 @@
 
         </main>
         @@include('blocks/footer.html')
-        @@include('blocks/modal.html')
 
+        <!-- Модальное окно используется fancyBox по умолчанию скрыто -->
+        <div class="modal__inner">
+            @@include('blocks/modal.html')
+        </div>
+        
         <!-- Vendors -->
+        <script src="./libs/swiper-bundle.min.js"></script>
         <script src="./libs/fancybox.umd.js"></script>
         <script src="./libs/jquery-3.7.1.min.js"></script>
 
+        <!-- Main -->
         <script src="../libs/mobile-nav.js"></script>
         <script src="../libs/data.js"></script>
         <script src="../libs/modal.js"></script>
